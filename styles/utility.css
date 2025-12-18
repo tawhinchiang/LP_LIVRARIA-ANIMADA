@@ -1,0 +1,29 @@
+    .button-purple {
+        display: flex;
+        padding:1rem;
+        align-items: center;
+        border-radius: 15%;
+        width: 5rem;
+        height: 3rem;
+        background-color: var(--pink-dark);
+        color: var(--text-title);
+
+        &:hover {
+            background-color: var(--pink-base);
+
+        }
+    }
+
+
+    .container {
+        padding: 2rem 2rem;
+        margin-inline: auto;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .gap-1{
+        gap:1rem;
+    }
