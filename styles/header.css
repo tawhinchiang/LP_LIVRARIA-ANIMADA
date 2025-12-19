@@ -1,4 +1,39 @@
 header {
+    
     align-items: center;
     justify-content: space-between;
+
+    & img,
+    a {
+        z-index: 1;
+    }
+
+    & .mobile-only {
+
+        display: none;
+
+    }
+
+
+}
+
+@media (width<80rem) {
+    header {
+        & img:nth-child(1) {
+            display: none;
+        }
+
+        & .mobile-only {
+
+
+            display: inline-block;
+
+
+
+
+
+        }
+    }
+
+
 }
