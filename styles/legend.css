@@ -1,0 +1,35 @@
+section.legend {
+
+    max-width: 80rem;
+    padding: 275px 2rem;
+    gap: 2rem;
+    justify-content: center;
+
+    & .content-title {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+
+        & div {
+            max-width: 27rem;
+            border: 1px solid blue;
+            display: flex;
+            gap: 0.75rem;
+
+            & h1 {
+
+                font: 400 var(--title-sm)/1.1 var(--ff-base);
+                color: var(--text-title);
+
+            }
+        }
+
+        & span {
+
+            font: 400 var(-body-lg)/1.4 var(--ff-base);
+            color: #E2E7E9;
+        }
+    }
+
+}
