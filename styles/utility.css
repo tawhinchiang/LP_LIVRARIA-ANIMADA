@@ -1,6 +1,6 @@
     .button-purple {
         display: flex;
-
+        position: relative;
         justify-content: center;
         align-items: center;
         border-radius: 15%;
@@ -34,4 +34,74 @@
 
     .gap-1 {
         gap: 1rem;
+    }
+
+    .ellipse3 {
+        position: absolute;
+        width: 33rem;
+        height: 33rem;
+        left: calc(50% - 33rem/2 - 13rem);
+        top: 61rem;
+        background: #3F0F41;
+        filter: blur(434px);
+        border: 1px solid white;
+    }
+
+    .ellipse4 {
+
+
+        position: absolute;
+        width: 241px;
+        height: 241px;
+        left: calc(50% - 241px/2 + 696.5px);
+        top: 366px;
+
+        background: #3F0F41;
+        filter: blur(234px);
+        border: 1px solid white;
+    }
+
+    .ellipse2 {
+
+
+        position: absolute;
+        width: 376px;
+        height: 376px;
+        left: calc(50% - 376px/2 - 791px);
+        top: 494px;
+
+        background: #3F0F41;
+        filter: blur(254px);
+
+        border: 1px solid white;
+    }
+
+    .ellipse1 {
+
+
+
+        position: absolute;
+        width: 491px;
+        height: 491px;
+        left: calc(50% - 491px/2 + 696.5px);
+        top: 722px;
+
+        background: #3F0F41;
+        filter: blur(334px);
+        border: 1px solid white;
+
+
+    }
+
+    .blur {
+        position: absolute;
+        width: 930px;
+        height: 930px;
+        left: calc(50% - 930px/2);
+        top: calc(50% - 930px/2 + 38px);
+
+        background: #3F0F41;
+        opacity: 0.5;
+        filter: blur(300px);
+
     }

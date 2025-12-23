@@ -2,6 +2,8 @@ section.hero {
     max-width: 80rem;
     height: 59rem;
 
+
+    overflow-x: hidden;
     align-items: center;
     justify-content: center;
 
