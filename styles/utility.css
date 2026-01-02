@@ -20,6 +20,28 @@
 
         }
     }
+    .button-blue  {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15%;
+        width: 5rem;
+        height: 2.5rem;
+
+        background-color: var(--blue-dark);
+
+        & {
+            color: var(--text-title);
+            font: 400 var(--link)/1.0 var(--ff-base);
+        }
+
+
+        &:hover {
+            background-color: var(--pink-base);
+
+        }
+    }
 
 
     .container {

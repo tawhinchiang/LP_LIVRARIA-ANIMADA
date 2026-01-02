@@ -39,7 +39,7 @@
 
     --link: 0.8rem;
     --tag: 0.6rem;
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
 }
 
 html {
