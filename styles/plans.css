@@ -9,6 +9,7 @@ section.plans {
 
     & h1 {
         text-align: center;
+        z-index: 2;
     }
 
     & .content-cards-plans {
@@ -21,11 +22,343 @@ section.plans {
         margin: 0 auto;
         position: relative;
 
+        &:hover {
 
+            & .card-generic {
+                display: flex;
+
+                z-index: 1;
+                flex-direction: column;
+                position: relative;
+                margin-inline: auto;
+                width: 18rem;
+                height: 26rem;
+                padding: 2rem;
+                background-color: var(--shape-base);
+                border-radius: 1.65rem;
+
+                &:hover {
+                    background-color: var(--shape-hover);
+                    z-index: 2;
+
+                }
+
+                & img[src*="star-lg.svg"] {
+                    position: absolute;
+
+                    width: 6.25rem;
+                    height: 6.25rem;
+                    left: -30%;
+                    top: -12%;
+
+
+
+
+                }
+
+                & img[src*="star-sm.svg"] {
+
+
+
+                    position: absolute;
+                    width: 4.37rem;
+                    height: 4.37rem;
+                    left: -30%;
+                    top: -2%;
+
+
+
+
+                    position: absolute;
+
+                }
+
+
+
+
+                & .price {
+                    display: grid;
+                    gap: 2rem;
+
+                    & div:nth-child(1) {
+                        display: flex;
+
+
+                        justify-content: space-between;
+                        align-items: center;
+
+                        & span:nth-child(1) {
+
+                            font: 700 var(--title-xs)/1.1875rem var(--ff-base);
+                            color: var(--blue-light);
+                        }
+
+                        & span:nth-child(2) {
+                            display: flex;
+                            font: 700 var(--tag)/0.75rem var(--ff-base);
+                            color: var(--text-body);
+                            background: var(--shape-stroke);
+                            text-transform: uppercase;
+                            letter-spacing: 0.05em;
+                            align-items: center;
+                            justify-content: center;
+                            width: 5.625rem;
+                            height: 2rem;
+                            border-radius: 9999px;
+
+
+
+
+
+                        }
+
+
+                    }
+
+                    & div:nth-child(2) {
+
+                        display: grid;
+
+                        gap: 0.5rem;
+
+                        & h3 {
+                            font: 700 var(--title-md)/2.9rem var(--ff-base);
+                            color: var(--text-body);
+
+                            & span {
+                                font: 700 var(--title-xs)/1.1875rem var(--ff-base);
+                                color: var(--text-body);
+                            }
+                        }
+
+                        & p {
+                            font: 400 var(--body-sm)/1.4 var(--ff-base);
+                            color: var(--text-label);
+
+
+
+                        }
+
+                    }
+
+
+                }
+
+                & .skills {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.75rem;
+                    margin-block: 4.3rem 1.5rem;
+                    height: 6.5rem;
+                    width: 14rem;
+                    margin-inline: auto;
+                    align-items: flex-start;
+
+
+                    & div {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        height: 14px;
+                        text-align: center;
+
+                        & img[src*="star-blue.svg"] {
+                            width: 30px;
+                            height: 30px;
+                            transform: rotate(7deg);
+                        }
+
+                        & span {
+                            font: 400 10px/1.4 var(--ff-base);
+                            color: var(--text-body);
+                        }
+
+                    }
+
+
+                }
+
+                & .button-blue {
+                    margin: 0 auto;
+                    height: 2.5rem;
+                    width: 14rem;
+                    text-align: center;
+                    border-radius: .5rem;
+                    font: 700 var(--body-sm)/1rem var(--ff-base);
+                }
+
+
+
+
+            }
+
+            & .card-semester {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                margin-inline: auto;
+                width: 18rem;
+                height: 26rem;
+                padding: 2rem;
+                background-color: var(--shape-hover);
+                border-radius: 1.65rem;
+                z-index: 3;
+
+                &:hover {
+                    background-color: var(--shape-base);
+                    z-index: 2;
+
+                }
+
+                & img[src*="coelho.svg"] {
+                    position: absolute;
+                    top: -12%;
+                    left: calc(0 -1rem)
+                }
+
+
+                & .price {
+                    display: grid;
+                    gap: 2rem;
+
+                    & div:nth-child(1) {
+                        display: flex;
+
+
+                        justify-content: space-between;
+                        align-items: center;
+
+                        & span:nth-child(1) {
+
+                            font: 700 var(--title-xs)/1.1875rem var(--ff-base);
+                            color: var(--pink-light);
+                        }
+
+                        & span:nth-child(2) {
+                            display: flex;
+                            font: 700 var(--tag)/0.75rem var(--ff-base);
+                            color: var(--text-body);
+                            background: var(--shape-stroke);
+                            text-transform: uppercase;
+                            letter-spacing: 0.05em;
+                            align-items: center;
+                            justify-content: center;
+                            width: 5.625rem;
+                            height: 2rem;
+                            border-radius: 9999px;
+
+
+
+
+
+                        }
+
+
+                    }
+
+                    & div:nth-child(2) {
+
+                        display: grid;
+
+                        gap: 0.5rem;
+
+                        & h3 {
+                            font: 700 var(--title-md)/2.9rem var(--ff-base);
+                            color: var(--text-body);
+
+                            & span {
+                                font: 700 var(--title-xs)/1.1875rem var(--ff-base);
+                                color: var(--text-body);
+                            }
+                        }
+
+                        & p {
+                            font: 400 var(--body-sm)/1.4 var(--ff-base);
+                            color: var(--text-label);
+
+
+
+                        }
+
+                    }
+
+
+                }
+
+                & .skills {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.75rem;
+                    margin-block: 4.3rem 1.5rem;
+                    height: 6.5rem;
+                    width: 14rem;
+                    margin-inline: auto;
+                    align-items: flex-start;
+
+
+                    & div {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        height: 14px;
+                        text-align: center;
+
+                        & img[src*="star.svg"] {
+                            width: 40px;
+                            height: 40px;
+                        }
+
+                        & span {
+                            font: 400 10px/1.4 var(--ff-base);
+                            color: var(--text-body);
+                        }
+
+                    }
+
+
+                }
+
+                & .button-purple {
+                    margin: 0 auto;
+                    height: 2.5rem;
+                    width: 14rem;
+                    text-align: center;
+                    border-radius: .5rem;
+                    font: 700 var(--body-sm)/1rem var(--ff-base);
+                }
+
+
+
+
+            }
+
+
+            & .card-generic:nth-child(1) {
+                position: absolute;
+                left: calc(50% - 288px/2 - 317px);
+                top: calc(53% - 416px/2 + 25.92px);
+              
+               animation: slide-out-cards-1 3s linear ;
+            }
+
+
+            & .card-generic:nth-child(3) {
+
+                position: absolute;
+
+
+                transform: translateX(0%) rotate(10deg);
+
+                left: calc(50% - 288px/2 + 261.77px);
+                top: calc(50% - 416px/2 + 26px);
+
+            }
+
+        }
 
         & .card-generic {
             display: flex;
-            /* margin-top: 5rem; */
+
             z-index: 1;
             flex-direction: column;
             position: relative;
@@ -334,10 +667,7 @@ section.plans {
 
         & .card-generic:nth-child(1) {
             position: absolute;
-            left: calc(50% - 288px/2 - 317px);
-            top: calc(53% - 416px/2 + 25.92px);
-
-            transform: translateX(8%) rotate(-10deg);
+            transform: translateX(0%);
 
         }
 
@@ -345,11 +675,10 @@ section.plans {
 
 
         & .card-generic:nth-child(3) {
-            transform: translateX(0%) rotate(10deg);
+            transform: translateX(0%);
             position: absolute;
 
-            left: calc(50% - 288px/2 + 261.77px);
-            top: calc(50% - 416px/2 + 26px);
+
 
 
 
@@ -357,10 +686,20 @@ section.plans {
     }
 }
 
-@keyframes slide-out-cards {
+@keyframes slide-out-cards-1 {
 
-    to {
-        transform: translateX(24%) rotate(-18deg);
-        ;
+    100% {
+        opacity: 1;
+        transform: translateX(8%) rotate(-10deg);
+
+    }
+}
+
+@keyframes slide-out-cards-2 {
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%) rotate(10deg);
+
     }
 }

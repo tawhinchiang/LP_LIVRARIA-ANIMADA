@@ -20,7 +20,8 @@
 
         }
     }
-    .button-blue  {
+
+    .button-blue {
         display: flex;
         position: relative;
         justify-content: center;
@@ -126,4 +127,16 @@
         opacity: 0.5;
         filter: blur(300px);
 
+    }
+
+    .blur-2 {
+        
+        position: absolute;
+        width: 800px;
+        height: 700px;
+        left: calc(50% - 944px/2);
+        top: calc(50% - 944px/2 - 44px);
+
+        background: #000F1F;
+        filter: blur(284px);
     }
