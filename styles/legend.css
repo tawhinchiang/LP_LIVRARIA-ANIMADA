@@ -4,7 +4,7 @@ section.legend {
     padding: 275px 2rem;
     margin-inline: auto;
     justify-content: center;
-
+     overflow-x: hidden;
     & .content-title {
 
         justify-content: center;

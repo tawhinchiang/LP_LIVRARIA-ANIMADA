@@ -1,9 +1,11 @@
 section.plans {
     max-width: 80rem;
-    margin-inline: auto;
+    margin: 0 auto;
     padding: 2rem;
     display: grid;
-
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
     gap: 4rem;
 
 
@@ -18,7 +20,7 @@ section.plans {
         height: 37.8rem;
         justify-content: center;
         align-items: center;
-    
+       
         margin: 0 auto;
         position: relative;
 
@@ -334,15 +336,21 @@ section.plans {
 
             & .card-generic:nth-child(1) {
                 position: absolute;
-                transform: translateX(8%) rotate(-10deg);
+
+
+                left: calc(50% - 288px/2 - 317px);
+                top: calc(50% - 416px/2 + 25.92px);
+                animation: slide-out-cards-1 3s ease both;
+
             }
 
             & .card-generic:nth-child(3) {
-               
+
                 position: absolute;
-                transform: translateX(8%) rotate(10deg);
 
-
+                left: calc(50% - 288px/2 + 261.77px);
+                top: calc(50% - 416px/2 + 26px);
+                animation: slide-out-cards-2 3s ease both;
 
 
             }
@@ -352,9 +360,10 @@ section.plans {
 
         }
 
+
+
         & .card-generic {
             display: flex;
-
             z-index: 1;
             flex-direction: column;
             position: relative;
@@ -662,23 +671,50 @@ section.plans {
 
         & .card-generic:nth-child(1) {
             position: absolute;
-            left: calc(50% - 288px/2 - 317px);
+            transform: translateX(8%) rotate(-10deg);
             top: calc(50% - 416px/2 + 25.92px);
-            
-            animation: slide-out-cards-1  1.5s ease both;
-            
+            left: calc(50% - 288px/2 - 317px);
+
         }
 
         & .card-generic:nth-child(3) {
-
             position: absolute;
-
-
-            animation: slide-out-cards-2  1.5s ease both;
-          
-            left: calc(50% - 288px/2 + 261.77px);
             top: calc(50% - 416px/2 + 26px);
-            
+            left: calc(50% - 288px/2 + 261.77px);
+            transform: translateX(8%) rotate(10deg);
+
+            & img[src*="star-lg.svg"] {
+                display: none;
+                position: absolute;
+
+                width: 6.25rem;
+                height: 6.25rem;
+                right: -30%;
+                bottom: -12%;
+
+
+
+
+            }
+
+            & img[src*="star-sm.svg"] {
+
+
+
+                position: absolute;
+                width: 4.37rem;
+                height: 4.37rem;
+                right: -30%;
+                top: -2%;
+
+
+
+
+                position: absolute;
+
+            }
+
+
         }
 
 
@@ -703,6 +739,8 @@ section.plans {
 
     }
 }
+
+
 @keyframes slide-out-cards-2 {
     0% {
         opacity: 1;
@@ -718,5 +756,136 @@ section.plans {
         opacity: 1;
         transform: translateX(8%) rotate(10deg);
 
+    }
+}
+
+@keyframes slide-in-cards-mobile {
+    0% {
+        opacity: 0;
+        transform: translateX(-20%) translateY(-5%) rotate(0deg);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(-20%) translateY(-5%) rotate(0deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(110%) translateY(-5%) rotate(0deg);
+
+
+    }
+}
+
+@keyframes slide-in-cards-mobile-2 {
+    0% {
+        opacity: 0;
+        transform: translateX(230%) translateY(-5%) rotate(0deg);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(230%) translateY(-5%) rotate(0deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(-90.5%) translateY(-5%) rotate(0deg);
+
+
+    }
+}
+
+@media (width<80rem) {
+    section.plans {
+        h1 {
+            font: 700 var(--title-md)/1.5 var(--ff-base);
+        }
+
+        & .content-cards-plans {
+            display: flex;
+            position: relative;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                justify-content: center;
+
+                & .card-semester {
+                    width: 17rem;
+                    height: 25rem;
+                    z-index: 1;
+
+
+                }
+
+                & .card-generic:nth-child(1) {
+
+
+
+                    z-index: 3;
+                    animation: slide-in-cards-mobile 3s ease both;
+                }
+
+                & .card-generic:nth-child(3) {
+                    z-index: 4;
+                    animation: slide-in-cards-mobile-2 3s 5s ease both;
+
+
+
+                }
+            }
+
+            & .card-generic {
+                width: 17rem;
+                height: 25rem;
+            }
+
+            & .card-semester {
+                width: 17rem;
+                height: 25rem;
+                z-index: 1;
+
+
+            }
+
+            & .card-generic:nth-child(1) {
+
+                z-index: 2;
+
+                transform: translateX(-230%) rotate(0deg);
+                top: -50%;
+                position: absolute;
+
+                & img[src*="star-lg.svg"] {
+                    display: none;
+                }
+
+                & img[src*="star-sm.svg"] {
+                    display: none;
+                }
+
+            }
+
+            & .card-generic:nth-child(3) {
+                & img[src*="star-lg.svg"] {
+                    display: none;
+                }
+
+                & img[src*="star-sm.svg"] {
+                    display: none;
+                }
+
+                z-index: 3;
+                transform: translateX(230%) rotate(0deg);
+            }
+
+
+
+
+
+        }
     }
 }
